@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 8px; 
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #9eb8f4;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.keyboard .key {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #a8d5ff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.keyboard .key:hover {
+    background-color: #ddd;
+}
+
+.keyboard .key:active {
+    background-color: #9bc4ac;
+}
+
+.keyboard .key.backspace {
+    grid-column: span 2;
+}
+
+.keyboard .key.enter {
+    grid-column: span 2;
+}
+
+.keyboard .key.space {
+    grid-column: 4 / 10; 
+    padding: 15px 0; 
+}
